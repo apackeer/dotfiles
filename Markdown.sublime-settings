@@ -1,0 +1,16 @@
+{
+    "color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).tmTheme",
+    "draw_centered": false,
+    "extensions":
+    [
+        "md",
+        "mdown"
+    ],
+    "line_numbers": true,
+    "highlight_line": true,
+    "rulers":
+    [
+        72,
+        79
+    ]
+}
