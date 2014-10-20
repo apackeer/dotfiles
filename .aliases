@@ -1,5 +1,6 @@
 #Home brew
 alias bu="brew update && brew upgrade"
+alias cask="brew cask"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
