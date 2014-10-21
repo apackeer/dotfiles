@@ -10,6 +10,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
+# Enable Yosemite Dark mode togle with CTRL+OPT+CMD+T
+sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
+
 # Expanded Print Dialog
 defaults write -g PMPrintingExpandedStateForPrint -bool TRUE
 
