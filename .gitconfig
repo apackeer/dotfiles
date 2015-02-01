@@ -102,7 +102,7 @@
         insteadOf = "gist:"
 
 [credential]
-        helper = /usr/local/bin/git-credential-osxkeychain
+	helper = osxkeychain
 
 [hub]
         protocol = https
