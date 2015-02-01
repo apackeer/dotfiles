@@ -28,3 +28,7 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
+# Docker
+export DOCKER_HOST=tcp://192.168.1.216:2376
+export DOCKER_CERT_PATH=~/.docker
+export DOCKER_TLS_VERIFY=1
