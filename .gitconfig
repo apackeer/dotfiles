@@ -1,6 +1,6 @@
 [user]
     name = Arden Packeer
-	email = apackeer@cisco.com
+	email = contactme@ardenpackeer.com
     editor = /usr/bin/vim
 
 [alias]
@@ -46,7 +46,7 @@
         # Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
         whitespace = space-before-tab,indent-with-non-tab,trailing-space
         editor = /usr/bin/vim
-	    autocrlf = input
+	autocrlf = input
 
 [color]
         # Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -110,3 +110,9 @@
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[http]
+	sslVerify = false

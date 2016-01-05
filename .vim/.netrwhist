@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/private/var/db/launchd.db/com.apple.launchd.peruser.501'
+let g:netrw_dirhist_2='/Users/apackeer/Dropbox/src/go/src/github.com/GoogleCloudPlatform/heapster/deploy/kube-config/influxdb'
+let g:netrw_dirhist_3='/Users/apackeer/Dropbox/src/go/src/github.bmc.com/dca/fabrica-documentation/.git'

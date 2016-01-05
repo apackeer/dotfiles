@@ -15,7 +15,7 @@ if [ -f ~/.exports ]; then
 fi
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git virtualenv virtualenvwrapper)
+plugins=(docker git virtualenv virtualenvwrapper)
 
 # Oh-my-zsh settings
 if [ -f  $ZSH/oh-my-zsh.sh ]; then

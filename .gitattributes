@@ -1,2 +1,4 @@
 # Automatically normalize line endings for all text-based files
 * text=auto
+
+/usr/local/Library/Formula/anttweakbar.rb text eol=crlf

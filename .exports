@@ -1,4 +1,5 @@
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # Make vim the default editor
@@ -16,7 +17,7 @@ export HISTCONTROL=ignoredups
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
-export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
+#export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
@@ -29,6 +30,25 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
 # Docker
-export DOCKER_HOST=tcp://192.168.1.216:2376
-export DOCKER_CERT_PATH=~/.docker
+export DOCKER_HOST=tcp://127.0.0.1:2376
+export DOCKER_IP=$(boot2docker ip 2>/dev/null)
+export DOCKER_CERT_PATH=/Users/apackeer/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
+
+#NPM
+export NPM_PACKAGES="${HOME}/.npm-packages"
+export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+PATH="$NPM_PACKAGES/bin:$PATH"
+# Unset manpath so we can inherit from /etc/manpath via the `manpath`
+# command
+unset MANPATH # delete if you already modified MANPATH elsewhere in your config
+MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
+#Proxy
+#export HTTP_PROXY=http://192.168.1.1:3128
+#export HTTPS_PROXY=http://192.168.1.1:3128
+#export ALL_PROXY=http://192.168.1.1:3128
+#export http_proxy=http://192.168.1.1:3128
+#export https_proxy=http://192.168.1.1:3128
+#export all_proxy=http://192.168.1.1:3128
+#export NO_PROXY=localhost
