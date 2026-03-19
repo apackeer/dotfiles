@@ -1,0 +1,4 @@
+.DS_Store
+.env.secrets
+nvim/lazy-lock.json
+zsh/amazon.zsh

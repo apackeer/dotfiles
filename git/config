@@ -1,0 +1,39 @@
+[include]
+	path = ~/.config/git/config.local
+[color]
+	ui = auto
+[core]
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	side-by-side = true
+	line-numbers = true
+	syntax-theme = Solarized (dark)
+[push]
+	default = current
+	autoSetupRemote = true
+[pull]
+	rebase = true
+[merge]
+	log = true
+	conflictstyle = zdiff3
+[diff]
+	algorithm = histogram
+[rerere]
+	enabled = true
+[init]
+	defaultBranch = main
+[alias]
+	s = status -s
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	d = diff --stat
+	amend = commit --amend --no-edit
+	branches = branch -a
+	tags = tag -l
+	remotes = remote -v
+	recent = branch --sort=-committerdate --format='%(committerdate:relative)  %(refname:short)'
+	undo = reset --soft HEAD~1
+	cleanup = "!git branch --merged | grep -v '\\*\\|main\\|master' | xargs -n 1 git branch -d"
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)%an <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order

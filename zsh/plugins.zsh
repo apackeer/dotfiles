@@ -1,0 +1,11 @@
+plugins=(
+  git
+  fzf
+  zoxide
+  history-substring-search
+  docker
+  kubectl
+  npm
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)

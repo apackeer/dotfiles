@@ -1,0 +1,104 @@
+# Theme (Solarized Dark)
+background = #002b36
+foreground = #839496
+selection-background = #073642
+selection-foreground = #93a1a1
+cursor-text = #002b36
+palette = 0=#073642
+palette = 1=#dc322f
+palette = 2=#859900
+palette = 3=#b58900
+palette = 4=#268bd2
+palette = 5=#d33682
+palette = 6=#2aa198
+palette = 7=#eee8d5
+palette = 8=#002b36
+palette = 9=#cb4b16
+palette = 10=#586e75
+palette = 11=#657b83
+palette = 12=#839496
+palette = 13=#6c71c4
+palette = 14=#93a1a1
+palette = 15=#fdf6e3
+
+
+# Font
+font-family = JetBrainsMono Nerd Font
+font-size = 14
+# Render fonts bolder for better readability
+font-thicken = true
+font-thicken-strength = 0
+
+# Cursor
+cursor-style = bar
+cursor-style-blink = true
+cursor-color = #859900
+mouse-hide-while-typing = true
+
+# Window
+macos-titlebar-style = hidden
+# Restore window position/size on relaunch
+window-save-state = always
+maximize = false
+# Don't prompt when closing a terminal tab/split
+confirm-close-surface = false
+
+# Padding (left, right, top, bottom → x/y in Ghostty)
+window-padding-x = 4,4
+window-padding-y = 2,2
+
+# Shell
+# Auto-copy selected text to system clipboard
+copy-on-select = clipboard
+# Propagate terminfo and env vars over SSH
+shell-integration-features = ssh-terminfo,ssh-env
+# Auto-attach to existing tmux session "0", or create it if none exists (-A = attach-or-create)
+command = zsh --login -c "if command -v tmux >/dev/null 2>&1; then tmux new-session -A -s 0; else exec zsh; fi"
+
+# Notifications
+desktop-notifications = true
+
+# Mouse
+mouse-scroll-multiplier = 2
+
+# Keybindings
+# super+b> is a leader key pattern: press super+b, release, then press the next key
+keybind = cmd+c=text:\x1b[99~
+keybind = super+b>r=reload_config
+keybind = super+b>x=close_surface
+
+keybind = cmd+s>n=new_window
+
+# Tabs
+keybind = super+b>comma=previous_tab
+keybind = super+b>period=next_tab
+
+# quick tab switch
+keybind = super+b>1=goto_tab:1
+keybind = super+b>2=goto_tab:2
+keybind = super+b>3=goto_tab:3
+keybind = super+b>4=goto_tab:4
+keybind = super+b>5=goto_tab:5
+keybind = super+b>6=goto_tab:6
+keybind = super+b>7=goto_tab:7
+keybind = super+b>8=goto_tab:8
+keybind = super+b>9=goto_tab:9
+
+# split
+keybind = super+b>\=new_split:right
+keybind = super+b>-=new_split:down
+
+keybind = super+b>j=goto_split:bottom
+keybind = super+b>k=goto_split:top
+keybind = super+b>h=goto_split:left
+keybind = super+b>l=goto_split:right
+
+# move panes arrow
+keybind = super+b>arrow_down=goto_split:bottom
+keybind = super+b>arrow_up=goto_split:top
+keybind = super+b>arrow_left=goto_split:left
+keybind = super+b>arrow_right=goto_split:right
+
+keybind = super+b>z=toggle_split_zoom
+
+keybind = super+b>e=equalize_splits
