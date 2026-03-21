@@ -21,8 +21,16 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias listening="sudo lsof -i -n -P | grep -E 'LISTEN|UDP' | awk '{print \$1,\$2,\$3,\$8,\$9}'"
 
-# Docker
+# Docker (Colima)
+alias dup="colima start"
+alias ddown="colima stop"
 alias dps="docker ps"
 alias dpsa="docker ps -a"
+alias dlog="docker logs -f"
+alias dexec="docker exec -it"
 alias dstop='docker stop $(docker ps -a -q)'
-alias dclean='docker system prune -a'
+alias drm='docker rm $(docker ps -a -q)'
+alias dclean="docker system prune -a"
+alias dim="docker images"
+alias dctx="docker context use"  # dctx colima | dctx desktop-linux (ECR)
+alias lzd="lazydocker"
