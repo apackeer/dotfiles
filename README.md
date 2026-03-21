@@ -2,6 +2,8 @@
 
 My config files for maintaining a consistent dev environment across machines.
 
+[![screenshot](img/screenshot.png)](img/screenshot.png)
+
 ## Essential Tools
 
 - **Editor**: [NeoVim](https://neovim.io/) with lazy.nvim, LSP, Treesitter, Telescope, and Neo-tree
