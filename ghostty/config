@@ -36,7 +36,7 @@ cursor-color = #859900
 mouse-hide-while-typing = true
 
 # Window
-macos-titlebar-style = hidden
+window-decoration = none
 # Restore window position/size on relaunch
 window-save-state = always
 maximize = false
