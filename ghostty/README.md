@@ -6,6 +6,7 @@
 
 - Reload config: `Super+b` then `r`
 - Close surface: `Super+b` then `x`
+- Toggle fullscreen: `Super+b` then `f`
 - New window: `Cmd+s` then `n`
 
 ### Tabs
@@ -31,7 +32,7 @@
 
 - Config location: `~/.config/ghostty/config`
 - Font: JetBrainsMono Nerd Font (size 14)
-- Cursor: bar, blinking, Solarized green (`#859900`)
+- Cursor: block, blinking, Solarized green (`#859900`)
 - Theme: Solarized Dark
 - Shell: launches into tmux automatically (`tmux attach || tmux`)
 - Titlebar: hidden

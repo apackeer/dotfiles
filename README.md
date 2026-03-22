@@ -12,7 +12,7 @@ My config files for maintaining a consistent dev environment across machines.
 - **Shell**: [Zsh](https://www.zsh.org/) with [Powerlevel10k](https://github.com/romkatv/powerlevel10k) prompt
 - **Color Theme**: [Solarized Dark](https://ethanschoonover.com/solarized/) across all tools
 - **Window Management**: [Moom](https://manytricks.com/moom/)
-- **File Manager**: [Path Finder](https://www.cocoatech.io/)
+- **File Manager**: [Yazi](https://yazi-rs.github.io/) (terminal) / [Path Finder](https://www.cocoatech.io/) (GUI)
 
 ## Setup
 
@@ -68,6 +68,8 @@ dotfiles/
 │   └── README.md       # Keybindings, plugins & settings reference
 ├── zsh/                # Zsh config + modules
 │   └── README.md       # Plugins, aliases, functions & settings
+├── yazi/               # Yazi file manager config
+│   └── README.md       # Settings reference
 └── git/                # Git config
     └── README.md       # Aliases, delta & merge settings
 ```
