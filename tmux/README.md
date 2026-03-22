@@ -88,6 +88,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 - Equalize panes: `Prefix + =`
 - Kill pane: `Prefix + x`
 
+### Floating Popups
+
+- Yazi file manager: `Prefix + CTRL + y`
+- Floating terminal: `Prefix + CTRL + t`
+- Lazygit: `Prefix + CTRL + g`
+- Lazydocker: `Prefix + CTRL + d`
+
 ### Plugins
 
 - Install plugins: `Prefix + I`

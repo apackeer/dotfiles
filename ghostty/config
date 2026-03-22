@@ -30,7 +30,7 @@ font-thicken = true
 font-thicken-strength = 0
 
 # Cursor
-cursor-style = bar
+cursor-style = block
 cursor-style-blink = true
 cursor-color = #859900
 mouse-hide-while-typing = true
