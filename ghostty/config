@@ -53,7 +53,7 @@ copy-on-select = clipboard
 # Propagate terminfo and env vars over SSH
 shell-integration-features = ssh-terminfo,ssh-env
 # Auto-attach to existing tmux session "0", or create it if none exists (-A = attach-or-create)
-command = zsh --login -c "if command -v tmux >/dev/null 2>&1; then tmux new-session -A -s 0; else exec zsh; fi"
+command = zsh --login -c "command -v tmux >/dev/null 2>&1 && tmux new-session -A -s 0; exec zsh"
 
 # Notifications
 desktop-notifications = true
@@ -102,3 +102,5 @@ keybind = super+b>arrow_right=goto_split:right
 keybind = super+b>z=toggle_split_zoom
 
 keybind = super+b>e=equalize_splits
+
+keybind = super+b>f=toggle_fullscreen
