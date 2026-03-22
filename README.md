@@ -13,7 +13,6 @@ My config files for maintaining a consistent dev environment across machines.
 - **Color Theme**: [Solarized Dark](https://ethanschoonover.com/solarized/) across all tools
 - **Window Management**: [Moom](https://manytricks.com/moom/)
 - **File Manager**: [Path Finder](https://www.cocoatech.io/)
-- **Launcher**: [Alfred](https://www.alfredapp.com/) with custom workflows
 
 ## Setup
 
@@ -62,11 +61,15 @@ dotfiles/
 │   ├── symlinks.sh     # Create/delete symlinks
 │   └── macos.sh        # macOS system defaults
 ├── ghostty/            # Ghostty terminal config
+│   └── README.md       # Keybindings & settings reference
 ├── tmux/               # Tmux config
+│   └── README.md       # Keybindings & commands reference
 ├── nvim/               # NeoVim config (lazy.nvim)
+│   └── README.md       # Keybindings, plugins & settings reference
 ├── zsh/                # Zsh config + modules
-├── git/                # Git config
-└── alfred/             # Alfred workflows
+│   └── README.md       # Plugins, aliases, functions & settings
+└── git/                # Git config
+    └── README.md       # Aliases, delta & merge settings
 ```
 
 ## Acknowledgements

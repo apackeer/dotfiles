@@ -1,4 +1,4 @@
-# Neovim Cheatsheet
+# Neovim
 
 Quick reference for all keybindings, plugins, and settings in this config.
 
@@ -338,6 +338,36 @@ Completion sources (priority order): lazydev, LSP, snippets, buffer, path.
 | **vim-sleuth** | Auto-detect indent settings |
 | **todo-comments.nvim** | Highlight TODO/FIXME/NOTE in comments |
 | **render-markdown.nvim** | Rich markdown rendering in buffer |
+
+### Notes
+
+| Plugin | Description |
+|--------|-------------|
+| **obsidian.nvim** | Obsidian vault integration (daily notes, search, templates, tasks) |
+
+---
+
+## Obsidian (`<leader>o*`)
+
+### Global (any buffer)
+
+| Key | Action |
+|-----|--------|
+| `<leader>ot` | Today's daily note |
+| `<leader>on` | New note |
+| `<leader>os` | Search notes |
+| `<leader>oq` | Quick switch |
+
+### Buffer-local (markdown files in vault)
+
+| Key | Action |
+|-----|--------|
+| `<leader>of` | Follow wikilink under cursor |
+| `<leader>od` | Toggle checkbox + done stamp |
+| `<leader>oa` | Add task |
+| `<leader>op` | Insert template |
+| `<leader>or` | Rename note (updates backlinks) |
+| `<leader>oe` | Extract selection to new note |
 
 ---
 

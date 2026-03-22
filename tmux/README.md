@@ -1,4 +1,4 @@
-# Tmux Cheatsheet
+# Tmux
 
 ## Key Commands
 
@@ -68,6 +68,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 - Navigate to window: `Prefix + number`
 - Cycle through windows: `Prefix + n/p`
 - Kill window: `Prefix + w`
+- List windows/sessions: `Prefix + W` (Shift+w)
 - Rename window: `Prefix + ,`
 
 ### Sessions
@@ -84,7 +85,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 - Navigate between panes: `CTRL + h/j/k/l` (vim-tmux-navigator)
 - Resize pane: `Prefix + h/j/k/l`
 - Maximize/restore pane: `Prefix + m`
-- Equalize panes: `Prefix + e`
+- Equalize panes: `Prefix + =`
+- Kill pane: `Prefix + x`
 
 ### Plugins
 

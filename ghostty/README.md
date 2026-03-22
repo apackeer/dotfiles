@@ -1,4 +1,4 @@
-# Ghostty Cheatsheet
+# Ghostty
 
 ## Keybindings
 
@@ -10,7 +10,6 @@
 
 ### Tabs
 
-- New tab: `Super+b` then `c`
 - Previous tab: `Super+b` then `,`
 - Next tab: `Super+b` then `.`
 - Go to tab 1-9: `Super+b` then `1-9`
@@ -32,7 +31,7 @@
 
 - Config location: `~/.config/ghostty/config`
 - Font: JetBrainsMono Nerd Font (size 14)
-- Cursor: bar, blinking, green (`#A3BE8C`)
+- Cursor: bar, blinking, Solarized green (`#859900`)
 - Theme: Solarized Dark
 - Shell: launches into tmux automatically (`tmux attach || tmux`)
 - Titlebar: hidden
