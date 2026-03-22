@@ -1,5 +1,6 @@
 plugins=(
   git
+  vi-mode
   fzf
   zoxide
   history-substring-search

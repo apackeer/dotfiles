@@ -25,6 +25,7 @@ Via Oh My Zsh:
 | Plugin | Purpose |
 |--------|---------|
 | `git` | Git aliases and completions |
+| `vi-mode` | Vim keybindings for the command line |
 | `fzf` | Fuzzy finder integration |
 | `zoxide` | Smart `cd` replacement |
 | `history-substring-search` | Search history by substring |
@@ -33,6 +34,28 @@ Via Oh My Zsh:
 | `npm` | npm completions |
 | `zsh-autosuggestions` | Fish-like autosuggestions |
 | `zsh-syntax-highlighting` | Command syntax highlighting |
+
+## Vi Mode
+
+Vim keybindings are enabled for the command line. Cursor changes shape to indicate mode.
+
+| Key | Action |
+|-----|--------|
+| `Esc` | Switch to normal mode (block cursor) |
+| `i` / `a` | Switch to insert mode (beam cursor) |
+| `A` | Insert at end of line |
+| `I` | Insert at start of line |
+| `w` / `b` | Move forward/back by word |
+| `0` / `$` | Start/end of line |
+| `d`, `c`, `f`, etc. | Vim motions work as expected |
+
+### Autosuggestions in Vi Mode
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `l` | Normal | Accept suggestion one character at a time |
+| `Ctrl+Space` | Insert/Normal | Accept full suggestion |
+| `Right arrow` | Insert/Normal | Accept full suggestion |
 
 ## Aliases
 
