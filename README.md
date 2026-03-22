@@ -47,7 +47,7 @@ This only removes the symlinks, not the actual config files, so you can easily r
 ## Adding New Dotfiles
 
 1. Add config files under the appropriate tool directory (e.g., `tool/config`)
-2. Add a mapping to `symlinks.conf` in the format `$DOTFILES_DIR/source : $HOME/target`
+2. Add a mapping to `symlinks.conf` in the format `$DOTFILES_DIR/source:$HOME/target`
 3. Run `./scripts/symlinks.sh --create` to apply
 
 ## Structure

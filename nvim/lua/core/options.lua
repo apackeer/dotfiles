@@ -21,7 +21,6 @@ vim.o.linebreak = true -- companion to wrap don't split words
 vim.o.scrolloff = 4 -- minimal number of screen lines to keep above and below the cursor
 vim.o.sidescrolloff = 8 -- minimal number of screen columns either side of cursor if wrap is `false`
 vim.o.relativenumber = true -- set relative numbered lines
-vim.o.numberwidth = 4 -- set number column width to 2 {default 4}
 vim.o.shiftwidth = 4 -- the number of spaces inserted for each indentation
 vim.o.tabstop = 4 -- insert n spaces for a tab
 vim.o.softtabstop = 4 -- Number of spaces that a tab counts for while performing editing operations
@@ -45,6 +44,9 @@ vim.opt.formatoptions:remove { 'c', 'r', 'o' } -- don't insert the current comme
 -- Add nvim site dir to runtimepath so treesitter can find installed parsers
 vim.opt.runtimepath:prepend(vim.fn.stdpath 'data' .. '/site')
 vim.opt.runtimepath:remove '/usr/share/vim/vimfiles' -- separate vim plugins from neovim in case vim still in use
+
+-- Nerd Font is available (used by nvim-web-devicons, etc.)
+vim.g.have_nerd_font = true
 
 -- Disable unused language providers to silence checkhealth warnings
 vim.g.loaded_perl_provider = 0

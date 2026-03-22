@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 # Get the absolute path of the directory where the script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -7,7 +8,7 @@ CONFIG_FILE="$SCRIPT_DIR/../symlinks.conf"
 DOTFILES_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 export DOTFILES_DIR
 
-. $SCRIPT_DIR/utils.sh
+. "$SCRIPT_DIR/utils.sh"
 
 # Check if configuration file exists
 if [ ! -f "$CONFIG_FILE" ]; then

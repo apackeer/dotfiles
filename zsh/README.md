@@ -131,16 +131,15 @@ Vim keybindings are enabled for the command line. Cursor changes shape to indica
 ```
 zsh/
 ├── .zshrc              # Main config (module loader)
-├── .zshenv             # Early environment setup
 ├── .zprofile           # Login shell setup
 ├── p10k.zsh            # Powerlevel10k prompt config
-├── plugins.zsh         # Oh My Zsh plugin list
+├── plugins.zsh         # Oh My Zsh plugin list + vi-mode config
 ├── exports.zsh         # Environment variables
 ├── paths.zsh           # PATH additions
 ├── aliases.zsh         # Shell aliases
 ├── functions.zsh       # Custom functions
 ├── completions.zsh     # Tab completion settings
 ├── tools.zsh           # Tool initialization (mise)
-├── amazon.zsh          # Work-specific config
+├── amazon.zsh          # Work-specific config (not tracked)
 └── syntax-highlighting.zsh
 ```

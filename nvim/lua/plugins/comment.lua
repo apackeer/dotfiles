@@ -2,7 +2,8 @@
 return {
     'numToStr/Comment.nvim',
     opts = {},
-    config = function()
+    config = function(_, plugin_opts)
+        require('Comment').setup(plugin_opts)
         local opts = { noremap = true, silent = true }
         vim.keymap.set('n', '<C-_>', require('Comment.api').toggle.linewise.current, opts)
         vim.keymap.set('n', '<C-/>', require('Comment.api').toggle.linewise.current, opts)

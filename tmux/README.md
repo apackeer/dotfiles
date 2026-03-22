@@ -98,6 +98,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ### Plugins
 
 - Install plugins: `Prefix + I`
+- **Note:** After `Prefix + I`, re-run `./scripts/symlinks.sh --create` to restore custom scripts in `plugins/tmux/scripts/` (TPM overwrites them on update)
 
 ## Copy Mode
 

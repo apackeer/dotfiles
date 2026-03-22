@@ -110,8 +110,6 @@ Completion sources (priority order): lazydev, LSP, snippets, buffer, path.
 | `<leader>=` | Equalize splits |
 | `<C-w>c` | Close split (native vim) |
 | `<C-h/j/k/l>` | Navigate between splits |
-| `<Up/Down>` | Resize height (+/-2) |
-| `<Left/Right>` | Resize width (+/-2) |
 
 ---
 

@@ -1,11 +1,6 @@
-# --- Vi mode config ---
-VI_MODE_SET_CURSOR=true            # Block cursor in normal mode, beam in insert
-VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
-
 # --- Autosuggestion config ---
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=240"
-ZSH_AUTOSUGGEST_ACCEPT="autosuggest-accept"
 bindkey -M viins '^ ' autosuggest-accept  # Ctrl+Space to accept suggestion
 
 # --- Completion tuning ---

@@ -2,16 +2,12 @@ export EDITOR=nvim
 export VISUAL=nvim
 export MANPAGER="less -FMRiX"
 
-# History
+# History (OMZ sets HIST_EXPIRE_DUPS_FIRST, HIST_VERIFY, SHARE_HISTORY, EXTENDED_HISTORY)
 HISTSIZE=50000
 SAVEHIST=50000
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_VERIFY
-setopt SHARE_HISTORY
-setopt EXTENDED_HISTORY
 
 # Solarized LS_COLORS for tools that use it (fzf, fd, tab completion, etc.)
 if command -v gdircolors &>/dev/null && [[ -f ~/.dir_colors ]]; then

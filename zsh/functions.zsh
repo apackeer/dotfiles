@@ -1,5 +1,5 @@
 # mkdir + cd
-mkd() { mkdir -p "$@" && cd "$@" }
+mkd() { mkdir -p "$@" && cd "$1" }
 
 # Start HTTP server
 serve() { python3 -m http.server "${1:-8000}" }
@@ -21,7 +21,7 @@ fs() {
 # Gzip comparison
 gz() {
   echo "orig size (bytes): "
-  cat "$1" | wc -c
+  wc -c < "$1"
   echo "gzipped size (bytes): "
   gzip -c "$1" | wc -c
 }

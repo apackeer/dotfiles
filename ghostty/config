@@ -27,7 +27,6 @@ font-family = JetBrainsMono Nerd Font
 font-size = 14
 # Render fonts bolder for better readability
 font-thicken = true
-font-thicken-strength = 0
 
 # Cursor
 cursor-style = block
@@ -51,7 +50,7 @@ window-padding-y = 2,2
 # Auto-copy selected text to system clipboard
 copy-on-select = clipboard
 # Propagate terminfo and env vars over SSH
-shell-integration-features = ssh-terminfo,ssh-env
+shell-integration-features = cursor,sudo,title,ssh-terminfo,ssh-env
 # Auto-attach to existing tmux session "0", or create it if none exists (-A = attach-or-create)
 command = zsh --login -c "command -v tmux >/dev/null 2>&1 && tmux new-session -A -s 0; exec zsh"
 
@@ -63,11 +62,11 @@ mouse-scroll-multiplier = 2
 
 # Keybindings
 # super+b> is a leader key pattern: press super+b, release, then press the next key
-keybind = cmd+c=text:\x1b[99~
+keybind = super+c=text:\x1b[99~
 keybind = super+b>r=reload_config
 keybind = super+b>x=close_surface
 
-keybind = cmd+s>n=new_window
+keybind = super+s>n=new_window
 
 # Tabs
 keybind = super+b>comma=previous_tab

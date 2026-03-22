@@ -1,6 +1,6 @@
 # Git
 
-Global git config with [delta](https://github.com/dandavid/delta) as the diff pager.
+Global git config with [delta](https://github.com/dandavison/delta) as the diff pager.
 
 ## Diff & Merge
 

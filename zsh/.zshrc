@@ -16,10 +16,10 @@ source ~/.config/zsh/paths.zsh               # PATH additions
 source ~/.config/zsh/aliases.zsh             # Shell aliases
 source ~/.config/zsh/functions.zsh           # Custom shell functions
 source ~/.config/zsh/completions.zsh         # Tab completion settings
-source ~/.config/zsh/tools.zsh               # Tool initialization (fzf, zoxide, etc.)
-[ -f ~/.config/zsh/amazon.zsh ] && source ~/.config/zsh/amazon.zsh  # Work config (not tracked)
+source ~/.config/zsh/tools.zsh               # Tool initialization (mise)
+[ -f ~/.config/zsh/amazon.zsh ] && source ~/.config/zsh/amazon.zsh  # Work config
 source ~/.config/zsh/syntax-highlighting.zsh # zsh-syntax-highlighting setup
 
 # Secrets & prompt
 [ -f "$HOME/.env.secrets" ] && source "$HOME/.env.secrets" # Load API keys/tokens if present
-[[ ! -f ~/.config/zsh/p10k.zsh ]] || source ~/.config/zsh/p10k.zsh
+[[ -f ~/.config/zsh/p10k.zsh ]] && source ~/.config/zsh/p10k.zsh
