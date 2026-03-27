@@ -69,7 +69,7 @@ map('n', '<C-h>', ':wincmd h<CR>', 'Navigate left')
 map('n', '<C-l>', ':wincmd l<CR>', 'Navigate right')
 
 -- Toggle line wrapping
-map('n', '<leader>wr', '<cmd>set wrap!<CR>', 'Toggle line wrap')
+map('n', '<leader>lr', '<cmd>set wrap!<CR>', 'Toggle line wrap')
 
 -- Quick escape from insert mode (press jk or kj rapidly)
 map('i', 'jk', '<ESC>', 'Exit insert mode')

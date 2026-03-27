@@ -234,7 +234,7 @@ Completion sources (priority order): lazydev, LSP, snippets, buffer, path.
 
 | Key | Action |
 |-----|--------|
-| `<leader>wr` | Toggle line wrap |
+| `<leader>lr` | Toggle line wrap |
 | `<leader>mr` | Toggle markdown rendering |
 
 ---

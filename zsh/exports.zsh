@@ -32,5 +32,8 @@ sg=38;2;220;50;47:\
 tw=1;38;2;38;139;210:\
 ow=1;38;2;38;139;210"
 
+# Docker (Colima)
+export DOCKER_HOST="unix://$HOME/.colima/default/docker.sock"
+
 # Bun
 export BUN_INSTALL="$HOME/.bun"

@@ -35,5 +35,6 @@ alias dim="docker images"
 alias dctx="docker context use"  # dctx colima | dctx desktop-linux (ECR)
 alias lzd="lazydocker"
 
-# Browser
-alias chrome-debug='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir=$HOME/.chrome-debug'
+# Claude Code
+alias c="claude"
+

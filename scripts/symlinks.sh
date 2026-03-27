@@ -75,7 +75,7 @@ delete_symlinks() {
         # Check if the symbolic link or file exists
         if [ -L "$target" ] || { [ "$include_files" == true ] && [ -f "$target" ]; }; then
             # Remove the symbolic link or file
-            rm -rf "$target"
+            rm -f "$target"
             _success "Deleted: $target"
         else
             _warning "Not found: $target"
@@ -85,12 +85,13 @@ delete_symlinks() {
 
 # Parse arguments
 if [ "$(basename "$0")" = "$(basename "${BASH_SOURCE[0]}")" ]; then
+    include_files=false
     case "$1" in
     "--create")
         create_symlinks
         ;;
     "--delete")
-        if [ "$2" == "--include-files" ]; then
+        if [ "${2:-}" == "--include-files" ]; then
             include_files=true
         fi
         delete_symlinks

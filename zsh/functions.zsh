@@ -1,3 +1,7 @@
+# Ctrl+F for fzf history search (both insert and normal vi modes)
+bindkey -M viins '^F' fzf-history-widget
+bindkey -M vicmd '^F' fzf-history-widget
+
 # mkdir + cd
 mkd() { mkdir -p "$@" && cd "$1" }
 

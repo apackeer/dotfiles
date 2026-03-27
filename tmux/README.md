@@ -67,7 +67,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 - New window (in CWD): `Prefix + c`
 - Navigate to window: `Prefix + number`
 - Cycle through windows: `Prefix + n/p`
-- Kill window: `Prefix + w`
+- Kill window (with confirmation): `Prefix + w`
 - List windows/sessions: `Prefix + W` (Shift+w)
 - Rename window: `Prefix + ,`
 
