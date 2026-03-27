@@ -2,6 +2,25 @@
 bindkey -M viins '^F' fzf-history-widget
 bindkey -M vicmd '^F' fzf-history-widget
 
+# Ctrl+G for interactive grep (like <leader>sg in Neovim)
+fzf-grep-widget() {
+  local result
+  result=$(rg --line-number --color=always '' \
+    | fzf --ansi --delimiter ':' \
+          --preview 'bat --color=always --highlight-line {2} {1}' \
+          --preview-window '+{2}-5')
+  if [[ -n "$result" ]]; then
+    local file line
+    file=$(echo "$result" | cut -d: -f1)
+    line=$(echo "$result" | cut -d: -f2)
+    ${EDITOR:-nvim} "+$line" "$file"
+  fi
+  zle reset-prompt
+}
+zle -N fzf-grep-widget
+bindkey -M viins '^G' fzf-grep-widget
+bindkey -M vicmd '^G' fzf-grep-widget
+
 # mkdir + cd
 mkd() { mkdir -p "$@" && cd "$1" }
 

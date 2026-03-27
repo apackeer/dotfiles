@@ -26,7 +26,7 @@ Via Oh My Zsh:
 |--------|---------|
 | `git` | Git aliases and completions |
 | `vi-mode` | Vim keybindings for the command line |
-| `fzf` | Fuzzy finder integration (`Ctrl+F` for history search) |
+| `fzf` | Fuzzy finder integration (`Ctrl+F` history, `Ctrl+G` grep) |
 | `zoxide` | Smart `cd` replacement |
 | `history-substring-search` | Search history by substring |
 | `docker` | Docker completions |
@@ -116,6 +116,7 @@ Vim keybindings are enabled for the command line. Cursor changes shape to indica
 | `gz` | Compare original vs gzipped size |
 | `digga` | DNS lookup (any record type) |
 | `json` | Pretty-print JSON via jq |
+| `fzf-grep-widget` | Interactive ripgrep + fzf, opens match in `$EDITOR` (`Ctrl+G`) |
 
 ## Key Settings
 
