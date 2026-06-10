@@ -1,0 +1,87 @@
+{
+  "cleanupPeriodDays": 365,
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_CODE_USE_BEDROCK": "1",
+    "AWS_PROFILE": "claude",
+    "AWS_REGION": "us-east-1",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "global.anthropic.claude-fable-5",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "global.anthropic.claude-opus-4-8",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "global.anthropic.claude-sonnet-4-6",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "ENABLE_TOOL_SEARCH": "1",
+    "BASH_MAX_OUTPUT_LENGTH": "150000",
+    "CLAUDE_CODE_FILE_READ_MAX_OUTPUT_TOKENS": "100000",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "80",
+    "DISABLE_TELEMETRY": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1",
+    "CLAUDE_CODE_NO_FLICKER": "1"
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Bash",
+      "WebFetch",
+      "WebSearch",
+      "Glob",
+      "Grep",
+      "Task",
+      "mcp__chrome-devtools__*",
+      "mcp__desktop-control__*",
+      "Bash(bun .claude/tools/aidlc-*)",
+      "Bash(bun dist/claude/.claude/tools/aidlc-*)",
+      "Bash(bun /private/var/folders/*aidlc-test-*)",
+      "Bash(bash tests/*)",
+      "Bash(bash /Users/packeera/src/aidlc-claude/*)",
+      "Bash(cd /Users/packeera/src/aidlc-claude*)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "model": "fable",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /Users/packeera/.claude/hooks/check-read-size.sh",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "AskUserQuestion",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /Users/packeera/.claude/hooks/check-askuser-recommend.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/packeera/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true
+  },
+  "effortLevel": "xhigh",
+  "awaySummaryEnabled": false,
+  "autoDreamEnabled": true,
+  "skipDangerousModePermissionPrompt": true,
+  "skipWorkflowUsageWarning": true,
+  "editorMode": "vim",
+  "teammateMode": "in-process",
+  "skipAutoPermissionPrompt": true
+}
