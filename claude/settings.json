@@ -36,6 +36,12 @@
       "mcp__chrome-devtools__*",
       "mcp__desktop-control__*"
     ],
+    "ask": [
+      "Read(~/.aws/**)",
+      "Read(~/.ssh/**)",
+      "Read(**/.env)",
+      "Read(**/.env.*)"
+    ],
     "defaultMode": "acceptEdits"
   },
   "model": "fable",
