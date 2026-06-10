@@ -34,13 +34,7 @@
       "Grep",
       "Task",
       "mcp__chrome-devtools__*",
-      "mcp__desktop-control__*",
-      "Bash(bun .claude/tools/aidlc-*)",
-      "Bash(bun dist/claude/.claude/tools/aidlc-*)",
-      "Bash(bun /private/var/folders/*aidlc-test-*)",
-      "Bash(bash tests/*)",
-      "Bash(bash /Users/packeera/src/aidlc-claude/*)",
-      "Bash(cd /Users/packeera/src/aidlc-claude*)"
+      "mcp__desktop-control__*"
     ],
     "defaultMode": "acceptEdits"
   },

@@ -8,11 +8,12 @@ used_pct_int=$(printf "%.0f" "$used_pct")
 current_dir=$(echo "$input" | jq -r '.workspace.current_dir')
 dir_name=$(basename "$current_dir")
 
-# Model: detect Bedrock (us.anthropic. prefix), then abbreviate
+# Model: detect Bedrock (us.anthropic. / global.anthropic. prefix), then abbreviate
 prefix=""
-if [[ "$model" == us.anthropic.* ]]; then
+if [[ "$model" == us.anthropic.* || "$model" == global.anthropic.* ]]; then
   prefix="BR:"
   model="${model#us.anthropic.}"
+  model="${model#global.anthropic.}"
 fi
 model=$(echo "$model" | sed -E 's/^claude-//; s/-v[0-9]+//; s/-[0-9]{8}//; s/:[0-9]+$//')
 
