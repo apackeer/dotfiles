@@ -24,7 +24,7 @@ palette = 15=#fdf6e3
 
 # Font
 font-family = JetBrainsMono Nerd Font
-font-size = 14
+font-size = 18
 # Render fonts bolder for better readability
 font-thicken = true
 
@@ -52,17 +52,20 @@ copy-on-select = clipboard
 # Propagate terminfo and env vars over SSH
 shell-integration-features = cursor,sudo,title,ssh-terminfo,ssh-env
 # Auto-attach to existing tmux session "0", or create it if none exists (-A = attach-or-create)
-command = zsh --login -c "command -v tmux >/dev/null 2>&1 && tmux new-session -A -s 0; exec zsh"
+# command = zsh --login -c "command -v tmux >/dev/null 2>&1 && tmux new-session -A -s 0; exec zsh"
 
 # Notifications
 desktop-notifications = true
 
 # Mouse
-mouse-scroll-multiplier = 2
+mouse-scroll-multiplier = 1
 
 # Keybindings
 # super+b> is a leader key pattern: press super+b, release, then press the next key
 keybind = super+c=text:\x1b[99~
+
+# Send ESC+DEL on alt+backspace so word-delete works in Pi and other TUIs
+keybind = alt+backspace=text:\x1b\x7f
 keybind = super+b>r=reload_config
 keybind = super+b>x=close_surface
 

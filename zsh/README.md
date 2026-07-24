@@ -125,6 +125,7 @@ Vim keybindings are enabled for the command line. Cursor changes shape to indica
 | Editor | `nvim` |
 | History size | 50,000 entries |
 | History behavior | Deduplicated, shared across sessions, timestamped |
+| Ctrl+D | Ignored (`IGNORE_EOF`) — prevents closing tmux panes |
 | Runtime manager | mise (via `tools.zsh`) |
 
 ## File Structure

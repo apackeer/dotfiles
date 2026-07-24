@@ -3,6 +3,7 @@ alias ls="eza --icons"
 alias ll="eza -l --icons --git"
 alias la="eza -la --icons --git"
 alias lt="eza --tree --icons --level=2"
+alias lta="eza --tree --icons -a ."
 alias cat="bat --paging=never"
 
 # Editor
@@ -35,6 +36,9 @@ alias dim="docker images"
 alias dctx="docker context use"  # dctx colima | dctx desktop-linux (ECR)
 alias lzd="lazydocker"
 
+# tmux
+alias ta="tmux new-session -A -s 0"  # attach-or-create session "0" (matches ghostty's launch command)
+
 # Claude Code
-alias c="claude"
+alias c="claude --dangerously-skip-permissions"
 

@@ -1,3 +1,4 @@
+require 'core.compat' -- Shims for deprecated APIs (vim.tbl_flatten, vim.str_utfindex)
 require 'core.options' -- Editor settings (tabs, numbers, clipboard, etc.)
 require 'core.keymaps' -- Key mappings and diagnostic config
 require 'core.autocommands' -- Autocommands (auto-reload, etc.)

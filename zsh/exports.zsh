@@ -8,6 +8,7 @@ SAVEHIST=50000
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
+setopt IGNORE_EOF              # Prevent Ctrl+D from closing tmux panes
 
 # Solarized LS_COLORS for tools that use it (fzf, fd, tab completion, etc.)
 if command -v gdircolors &>/dev/null && [[ -f ~/.dir_colors ]]; then
@@ -32,8 +33,11 @@ sg=38;2;220;50;47:\
 tw=1;38;2;38;139;210:\
 ow=1;38;2;38;139;210"
 
-# Docker (Colima)
-export DOCKER_HOST="unix://$HOME/.colima/default/docker.sock"
+# 1Password CLI — use desktop app's biometric session
+export OP_BIOMETRIC_UNLOCK_ENABLED=true
+
+# Docker (Colima) — macOS only; Linux boxes use the default socket
+[[ -d "$HOME/.colima" ]] && export DOCKER_HOST="unix://$HOME/.colima/default/docker.sock"
 
 # Bun
 export BUN_INSTALL="$HOME/.bun"

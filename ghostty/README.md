@@ -8,6 +8,7 @@
 - Close surface: `Super+b` then `x`
 - Toggle fullscreen: `Super+b` then `f`
 - New window: `Cmd+s` then `n`
+- Word-delete: `Alt+Backspace` (sends `ESC+DEL` for [Pi](https://pi.dev) and other TUIs)
 
 ### Tabs
 

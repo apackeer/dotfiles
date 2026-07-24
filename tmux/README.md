@@ -109,6 +109,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 - Paste: `Prefix + P`
 - Mouse drag selects text without exiting copy mode
 
+## Extended Keys (CSI u)
+
+`extended-keys on` and `extended-keys-format csi-u` are enabled so tmux
+forwards modifier+key combos (Shift+Enter, Ctrl+Enter, etc.) using the
+disambiguated CSI u escape format. Required by [Pi](https://pi.dev) and
+other modern TUIs. Needs tmux 3.2+.
+
 ## Useful Snippets
 
 Add this to you `.zshrc` to always work in a Tmux session:
