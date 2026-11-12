@@ -54,3 +54,18 @@ if [ -n "$gs" ]; then
 else
   printf '%b' "${prefix}${model}${effort} ${s} ${cc}ctx:${used_pct_int}%${r} ${s} ${dir_name}"
 fi
+
+# AI-DLC lead box only: a second line with the fleet and the merge queue, written each minute by
+# aidlc-workflows/tmp/workshop-fixes/lead-status.sh (cron). Nothing shows where that file does not exist.
+ops=/var/tmp/w9-lead-status.txt
+if [[ "$current_dir" == /home/ubuntu/src/aidlc-workflows* ]] && [ -f "$ops" ]; then
+  age=$(( $(date +%s) - $(stat -c %Y "$ops") ))
+  if [ "$age" -gt 180 ]; then
+    printf '\n%b' "\033[33mops: status ${age}s old (lead-status.sh cron)${r}"
+  else
+    line=$(cat "$ops")
+    line=${line//bus OFF/\\033[31mbus OFF\\033[0m}
+    if [[ "$line" =~ for\ you\ ([1-9][0-9]*) ]]; then line=${line//for you ${BASH_REMATCH[1]}/\\033[33mfor you ${BASH_REMATCH[1]}\\033[0m}; fi
+    printf '\n%b' "$line"
+  fi
+fi
