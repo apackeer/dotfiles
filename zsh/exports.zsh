@@ -33,6 +33,9 @@ sg=38;2;220;50;47:\
 tw=1;38;2;38;139;210:\
 ow=1;38;2;38;139;210"
 
+# Display local times in Melbourne, including daylight-saving transitions.
+export TZ="Australia/Melbourne"
+
 # 1Password CLI — use desktop app's biometric session
 export OP_BIOMETRIC_UNLOCK_ENABLED=true
 

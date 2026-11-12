@@ -39,6 +39,7 @@ alias lzd="lazydocker"
 # tmux
 alias ta="tmux new-session -A -s 0"  # attach-or-create session "0" (matches ghostty's launch command)
 
-# Claude Code
+# AI coding agents
 alias c="claude --dangerously-skip-permissions"
-
+alias cx="claude --dangerously-skip-permissions"
+alias cy="codex --yolo"

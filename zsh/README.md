@@ -106,6 +106,13 @@ Vim keybindings are enabled for the command line. Cursor changes shape to indica
 | `dctx` | Switch Docker context |
 | `lzd` | Launch lazydocker |
 
+### AI Coding Agents
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `c` / `cx` | `claude --dangerously-skip-permissions` | Launch Claude Code without permission prompts |
+| `cy` | `codex --yolo` | Launch Codex without approvals or sandboxing |
+
 ## Functions
 
 | Function | Description |
