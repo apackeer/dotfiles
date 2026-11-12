@@ -1,0 +1,180 @@
+# Solarized Dark theme for eza
+# Base tones dominate; accent colors used only for semantic meaning.
+
+filekinds:
+  normal:
+    foreground: "#839496"        # base0
+  directory:
+    foreground: "#268bd2"        # blue
+    is_bold: true
+  symlink:
+    foreground: "#2aa198"        # cyan
+  pipe:
+    foreground: "#586e75"        # base01
+  block_device:
+    foreground: "#b58900"        # yellow
+  char_device:
+    foreground: "#b58900"        # yellow
+  socket:
+    foreground: "#586e75"        # base01
+  special:
+    foreground: "#586e75"        # base01
+  executable:
+    foreground: "#859900"        # green
+  mount_point:
+    foreground: "#268bd2"        # blue
+    is_bold: true
+
+perms:
+  user_read:
+    foreground: "#859900"        # green
+  user_write:
+    foreground: "#b58900"        # yellow
+  user_execute_file:
+    foreground: "#dc322f"        # red
+  user_execute_other:
+    foreground: "#dc322f"        # red
+  group_read:
+    foreground: "#859900"        # green
+  group_write:
+    foreground: "#b58900"        # yellow
+  group_execute:
+    foreground: "#dc322f"        # red
+  other_read:
+    foreground: "#859900"        # green
+  other_write:
+    foreground: "#b58900"        # yellow
+  other_execute:
+    foreground: "#dc322f"        # red
+  special_user_file:
+    foreground: "#dc322f"        # red
+  special_other:
+    foreground: "#dc322f"        # red
+  attribute:
+    foreground: "#586e75"        # base01
+  no_access:
+    foreground: "#586e75"        # base01
+
+size:
+  number_byte:
+    foreground: "#839496"        # base0
+  number_kilo:
+    foreground: "#839496"        # base0
+  number_mega:
+    foreground: "#839496"        # base0
+  number_giga:
+    foreground: "#b58900"        # yellow
+  number_huge:
+    foreground: "#dc322f"        # red
+  unit_byte:
+    foreground: "#586e75"        # base01
+  unit_kilo:
+    foreground: "#586e75"        # base01
+  unit_mega:
+    foreground: "#586e75"        # base01
+  unit_giga:
+    foreground: "#586e75"        # base01
+  unit_huge:
+    foreground: "#586e75"        # base01
+
+users:
+  user_you:
+    foreground: "#839496"        # base0
+  user_other:
+    foreground: "#586e75"        # base01
+  group_yours:
+    foreground: "#586e75"        # base01
+  group_other:
+    foreground: "#586e75"        # base01
+
+links:
+  normal:
+    foreground: "#586e75"        # base01
+  multi_link_file:
+    foreground: "#586e75"        # base01
+
+git:
+  new:
+    foreground: "#859900"        # green
+  modified:
+    foreground: "#b58900"        # yellow
+  deleted:
+    foreground: "#dc322f"        # red
+  renamed:
+    foreground: "#2aa198"        # cyan
+  ignored:
+    foreground: "#586e75"        # base01
+  conflicted:
+    foreground: "#dc322f"        # red
+
+git_repo:
+  branch_main:
+    foreground: "#839496"        # base0
+  branch_other:
+    foreground: "#6c71c4"        # violet
+  git_clean:
+    foreground: "#859900"        # green
+  git_dirty:
+    foreground: "#b58900"        # yellow
+
+security_context:
+  colon:
+    foreground: "#586e75"        # base01
+  user:
+    foreground: "#839496"        # base0
+  role:
+    foreground: "#586e75"        # base01
+  typ:
+    foreground: "#586e75"        # base01
+  range:
+    foreground: "#586e75"        # base01
+
+file_type:
+  image:
+    foreground: "#6c71c4"        # violet
+  video:
+    foreground: "#6c71c4"        # violet
+  music:
+    foreground: "#2aa198"        # cyan
+  crypto:
+    foreground: "#cb4b16"        # orange
+  document:
+    foreground: "#839496"        # base0
+  compressed:
+    foreground: "#dc322f"        # red
+  temp:
+    foreground: "#586e75"        # base01
+  compiled:
+    foreground: "#586e75"        # base01
+  build:
+    foreground: "#586e75"        # base01
+  source:
+    foreground: "#839496"        # base0
+
+punctuation:
+  foreground: "#586e75"          # base01
+
+date:
+  foreground: "#586e75"          # base01
+
+inode:
+  foreground: "#586e75"          # base01
+
+blocks:
+  foreground: "#586e75"          # base01
+
+header:
+  foreground: "#93a1a1"          # base1
+  is_bold: true
+
+symlink_path:
+  foreground: "#2aa198"          # cyan
+
+control_char:
+  foreground: "#dc322f"          # red
+
+broken_symlink:
+  foreground: "#dc322f"          # red
+
+broken_path_overlay:
+  foreground: "#dc322f"          # red
