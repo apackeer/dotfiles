@@ -1,0 +1,28 @@
+onboarding = false
+[theme]
+name = "solarized"
+auto_switch = false
+
+[ui.sound]
+enabled = false
+
+[ui.toast]
+delivery = "off"
+
+[keys]
+switch_workspace = "alt+1..9"
+next_workspace = "prefix+m"
+previous_workspace = "prefix+u"
+
+[ui]
+show_agent_labels_on_pane_borders = true
+agent_panel_sort = "priority"
+
+[experimental]
+allow_nested = true
+
+[[keys.command]]
+key = "alt+h"
+description = "Hunk review (zoomed over current tab)"
+command = 'herdr plugin pane open --plugin hunk-review --entrypoint review --placement zoomed --target-pane "$HERDR_ACTIVE_PANE_ID" --cwd "$HERDR_ACTIVE_PANE_CWD" --focus'
+type = "shell"
