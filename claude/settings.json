@@ -5,13 +5,14 @@
     "CLAUDE_CODE_USE_BEDROCK": "1",
     "AWS_PROFILE": "claude",
     "AWS_REGION": "us-east-1",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL": "global.anthropic.claude-fable-5",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "global.anthropic.claude-opus-4-8",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "global.anthropic.claude-sonnet-4-6",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "global.anthropic.claude-fable-5-2[1m]",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "us.anthropic.claude-opus-5-5[1m]",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "global.anthropic.claude-sonnet-5[1m]",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "global.anthropic.claude-haiku-4-5-20251001-v1:0[1m]",
     "ENABLE_TOOL_SEARCH": "1",
     "BASH_MAX_OUTPUT_LENGTH": "150000",
     "CLAUDE_CODE_FILE_READ_MAX_OUTPUT_TOKENS": "100000",
+    "CLAUDE_CODE_MAX_RETRIES": "20",
     "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "80",
     "DISABLE_TELEMETRY": "1",
     "DISABLE_ERROR_REPORTING": "1",
@@ -45,6 +46,15 @@
     "defaultMode": "acceptEdits"
   },
   "model": "fable",
+  "modelOverrides": {
+    "claude-fable-5": "global.anthropic.claude-fable-5[1m]",
+    "claude-fable-5-1": "global.anthropic.claude-fable-5-1[1m]",
+    "claude-fable-5-2": "global.anthropic.claude-fable-5-2[1m]",
+    "claude-haiku-4-5-20251001": "global.anthropic.claude-haiku-4-5-20251001-v1:0[1m]",
+    "claude-opus-4-8": "global.anthropic.claude-opus-4-8[1m]",
+    "claude-opus-5": "global.anthropic.claude-opus-5[1m]",
+    "claude-sonnet-5": "global.anthropic.claude-sonnet-5[1m]"
+  },
   "hooks": {
     "PreToolUse": [
       {
@@ -77,11 +87,23 @@
     "typescript-lsp@claude-plugins-official": true
   },
   "effortLevel": "xhigh",
+  "autoCompactWindow": 1000000,
   "awaySummaryEnabled": false,
   "autoDreamEnabled": true,
   "skipDangerousModePermissionPrompt": true,
   "skipWorkflowUsageWarning": true,
   "editorMode": "vim",
   "teammateMode": "in-process",
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "modelSettings": {
+    "claude-fable-5-2": {
+      "effortLevel": "xhigh"
+    },
+    "claude-opus-4-8": {
+      "effortLevel": "medium"
+    },
+    "claude-opus-5-5": {
+      "effortLevel": "xhigh"
+    }
+  }
 }
