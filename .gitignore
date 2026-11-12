@@ -3,3 +3,4 @@
 nvim/lazy-lock.json
 zsh/amazon.zsh
 .claude/
+*.bak-*
